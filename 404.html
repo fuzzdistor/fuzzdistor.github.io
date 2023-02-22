@@ -23,12 +23,6 @@
 
   
 
-    
-
-    
-
-  
-
   
 
   
@@ -36,24 +30,24 @@
   
     <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.2" />
-<meta property="og:title" content="Chirpy" />
+<meta property="og:title" content="404: Page not found" />
 <meta property="og:locale" content="en" />
 <meta name="description" content="A minimal, responsive, and powerful Jekyll theme for presenting professional writing." />
 <meta property="og:description" content="A minimal, responsive, and powerful Jekyll theme for presenting professional writing." />
-<link rel="canonical" href="http://localhost:4000/" />
-<meta property="og:url" content="http://localhost:4000/" />
+<link rel="canonical" href="http://localhost:4000/404.html" />
+<meta property="og:url" content="http://localhost:4000/404.html" />
 <meta property="og:site_name" content="Chirpy" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Chirpy" />
+<meta property="twitter:title" content="404: Page not found" />
 <meta name="twitter:site" content="@twitter_username" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","description":"A minimal, responsive, and powerful Jekyll theme for presenting professional writing.","headline":"Chirpy","name":"your_full_name","sameAs":["https://twitter.com/username","https://github.com/username"],"url":"http://localhost:4000/"}</script>
+{"@context":"https://schema.org","@type":"WebPage","description":"A minimal, responsive, and powerful Jekyll theme for presenting professional writing.","headline":"404: Page not found","url":"http://localhost:4000/404.html"}</script>
 <!-- End Jekyll SEO tag -->
 
   
 
-  <title>Chirpy
+  <title>404: Page not found | Chirpy
   </title>
 
   <!--
@@ -108,6 +102,9 @@
 
   
 
+  
+    <!-- Manific Popup -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/magnific-popup@1.1.0/dist/magnific-popup.min.css">
   
 
   <!-- JavaScript -->
@@ -273,7 +270,7 @@
   <ul class="w-100">
 
     <!-- home -->
-    <li class="nav-item active">
+    <li class="nav-item">
       <a href="/" class="nav-link">
         <i class="fa-fw fas fa-home ml-xl-3 mr-xl-3 unloaded"></i>
         <span>HOME</span>
@@ -417,8 +414,29 @@
     
 
     
-      <!-- index page -->
-      <span>Home</span>
+
+      
+
+        
+          <span>
+            <a href="/">
+              Home
+            </a>
+          </span>
+
+        
+
+      
+
+        
+
+          
+            <span>404: Page not found</span>
+          
+
+        
+
+      
 
     
 
@@ -427,7 +445,7 @@
     <i id="sidebar-trigger" class="fas fa-bars fa-fw"></i>
 
     <div id="topbar-title">
-      Chirpy
+      404: Page not found
     </div>
 
     <i id="search-trigger" class="fas fa-search fa-fw"></i>
@@ -461,39 +479,85 @@
     
       
       
+      <h1 class="dynamic-title">
+        404: Page not found
+      </h1>
+      <div class="post-content">
         
+      
+        <!--
+  Refactor the HTML structure.
+-->
+
+
+
+<!--
+  In order to allow a wide table to scroll horizontally,
+  we suround the markdown table with `<div class="table-wrapper">` and `</div>`
+-->
+
+
+
+<!--
+  Fixed kramdown code highlight rendering:
+  https://github.com/penibelst/jekyll-compress-html/issues/101
+  https://github.com/penibelst/jekyll-compress-html/issues/71#issuecomment-188144901
+-->
+
+
+
+<!-- Change the icon of checkbox -->
+
+
+<!-- images -->
 
 
 
 
-<!-- Get pinned posts -->
+
+<!-- Add header for code snippets -->
+
+
+
+<!-- Create heading anchors -->
 
 
 
 
 
+  
+  
 
-<!-- Get default posts -->
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
 
 
 
 
+<!-- return -->
 
-
-
-
-
-
-<div id="post-list">
-
-
-
-</div> <!-- #post-list -->
-
+<div class="lead">
+  <p>Sorry, we've misplaced that URL or it's pointing to something that doesn't exist.</p>
+</div>
 
 
       
     
+      </div>
     
 
     </div>
@@ -681,11 +745,7 @@ SimpleJekyllSearch({
 
 
 
-
-
-
-  
-
+  <!-- image lazy-loading & popup & clipboard -->
   
 
   
@@ -723,17 +783,8 @@ SimpleJekyllSearch({
 
 
 
-  
-    
 
-    
-
-  
-
-
-
-
-  <script src="https://cdn.jsdelivr.net/combine/npm/dayjs@1.11.6/dayjs.min.js,npm/dayjs@1.11.6/locale/en.min.js,npm/dayjs@1.11.6/plugin/relativeTime.min.js,npm/dayjs@1.11.6/plugin/localizedFormat.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/combine/npm/magnific-popup@1.1.0/dist/jquery.magnific-popup.min.js,npm/lazysizes@5.3.2/lazysizes.min.js,npm/clipboard@2.0.11/dist/clipboard.min.js"></script>
 
 
 
@@ -742,7 +793,8 @@ SimpleJekyllSearch({
 
 
 
-<script defer src="/assets/js/dist/home.min.js"></script>
+
+<script defer src="/assets/js/dist/page.min.js"></script>
 
 
 
