@@ -43,7 +43,7 @@ const resource = [
 const allowedDomains = [
     
 
-    'localhost:4000',
+    'fuzzdistor.github.io',
 
     
 
