@@ -31,7 +31,6 @@ body {
 .navbar {
     align-items: center;
     vertical-align: middle;
-    height: 8vh;
     padding-left: 4vw;
     padding-right: 4vw;
     background: var(--bg-main);
@@ -45,13 +44,19 @@ body {
 }
 
 .mainLinkLogo {
-    height: 1.8rem;
-    background: url("/assets/blb.png") no-repeat;
-    background-size: contain;
+    max-height: 1.8rem;
+    width: auto;
+    height: 100%;
 }
 
 .loginMain {
-    margin-left: 0.5vw;
+    margin-left: 1vw;
+}
+
+.header {
+    position: sticky;
+    z-index: 10;
+    background-color: var(--bg-main);
 }
 
 .navitem {
@@ -62,6 +67,12 @@ body {
     margin-bottom: auto;
     margin-left: 10px;
     padding: 1px 5px;
+}
+
+.main-logo {
+    width: 80vw;
+    max-width: 800px;
+    margin-top: 5rem;
 }
 
 .linkElement {
@@ -88,6 +99,12 @@ button {
     border: none;
 }
 
+.mainRegister {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 .searchBoxMain {
     background-color: var(--olivine-light);
     color: black;
@@ -108,7 +125,7 @@ button {
     position: absolute;
     filter: blur(10px) brightness(60%);
     min-width: 110vw;
-    min-height: 100vh;
+    min-height: 100%;
     z-index: -3;
 }
 
@@ -129,7 +146,8 @@ button {
 
 .main-section {
     overflow: hidden;
-    height: 90vh;
+    height: auto;
+    min-height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -180,8 +198,10 @@ button {
         width: 100%;
         margin-left: 10px;
         .gameTitle {
+            display: inline-block;
             font-size: 1.5rem;
             color: var(--title-color);
+            line-height: 1.5rem;
             &:hover {
                 color: var(--title-hover);
             }
@@ -265,12 +285,10 @@ button {
     }
 }
 
-@media (max-width: 576px) {
-}
-
 .main-logo-clickable {
     vertical-align: middle !important;
 }
+
 
 .left {
     margin-left: 0;
@@ -278,6 +296,7 @@ button {
 }
 
 .right {
+    width: auto;
     margin-right: 0;
     margin-left: auto;
 }
@@ -303,7 +322,8 @@ button {
 }
 
 .registerForm {
-    height: 78vh;
+    height: auto;
+    min-height: 78vh;
     align-items: center;
 }
 
@@ -318,6 +338,11 @@ input, select{
     color: white;
     height: 50px;
     width: 80%;
+    margin-bottom: 2vh;
+}
+
+.night {
+    filter: brightness(0.3);
 }
 
 .terms {
@@ -325,16 +350,25 @@ input, select{
     align-items: center;
 }
 
+.loginForm {
+    height: auto;
+    min-height: 70vh;
+    align-items: center;
+    vertical-align: middle;
+}
+
 .formSubmit {
     background-color: var(--button);
     color: white;
-    width: 40%;
+    width: auto;
+    min-width: 40%;
     font-weight: bold;
 }
 
 .topForm {
     background: linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.705) 5%,rgba(0, 0, 0, 0.705) 95%, transparent);
-    width: 70%;
+    min-width: 70%;
+    width: auto;
 }
 
 .registerTitle {
@@ -356,10 +390,11 @@ input, select{
     z-index: -3;
 }
 
-@media (max-width:415px) {
+@media (max-width: 576px) {
     .footerElement {
         flex-direction: column;
     }
+
     .main-subtitle {
         width: 90%;
         font-size: 1.3rem;
@@ -369,12 +404,46 @@ input, select{
         width: 90vw;
     }
 
+    .mainLinkLogo {
+        content:url("/assets/blb-logo.png")
+    }
+
     .main-title {
         font-size: 2rem;
+    }
+
+    .main-section {
+        min-height: 70vh;
+    }
+
+    .navitem {
+        font-size: 0.8rem;
+    }
+
+    .searchBoxMain {
+        display: none;
     }
 
     .register-button {
         padding: 0.5rem 0.5rem;
     }
 
+}
+
+@media (max-width: 990px) {
+    .navitem {
+        font-size: 0.75rem;
+    }
+
+    .mainLinkLogo {
+        content:url("/assets/blb-logo.png")
+    }
+
+    .registerTitle {
+        font-size: 2rem;
+    }
+
+    .terms {
+        font-size: 0.7rem;
+    }
 }
