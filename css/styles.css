@@ -80,6 +80,27 @@ body {
     margin-top: 5rem;
 }
 
+.dog-image {
+    height: 40vh;
+    max-width: 800px;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.apitest {
+    margin-top: 1rem;
+}
+
+.errorLabel {
+    margin-top: -3vh;
+    margin-left: 10vw;
+}
+
+.errorNotif {
+    border-color: crimson;
+}
+
 .linkElement {
     text-decoration: none;
     font-weight: bold;

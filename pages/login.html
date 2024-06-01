@@ -42,9 +42,11 @@
             <h2 class="registerTitle">
                 Iniciar Sesión
             </h2>
-            <form class="loginForm row center">
+            <form class="loginForm row center" id="form">
                 <input class="inputField" type="text" id="email" name="email" placeholder="Email">
+                <label class="errorLabel" id="emailError"></label>
                 <input class="inputField" type="text" id="contrasena" name="contrasena" placeholder="Contraseña">
+                <label class="errorLabel" id="contrasenaError"></label>
                 <input class="formSubmit register-button center" type="submit" value="Iniciar Sesión">
                 <a href="#" class="help left linkElement">¿Olvidaste tu contraseña?</a>
                 <div class="right">¿No tienes cuenta? <a href="/pages/register.html" class="linkElement">Registrate</a></div>
@@ -70,5 +72,6 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/81ba92e8db.js" crossorigin="anonymous"></script>
+    <script src="/js/loginvalidator.js" crossorigin="anonymous"></script>
 </body>
 </html>
